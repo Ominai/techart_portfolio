@@ -1,1 +1,61 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      margin-top: 2em;
+    }
+    nav {
+      margin-top: 1em;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Title</h1>
+  </header>
+  <nav>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </nav>
+  <main class="gallery">
+    <img src="image1.jpg" alt="Image 1" onclick="expandImage('image1.jpg')">
+    <img src="image2.jpg" alt="Image 2" onclick="expandImage('image2.jpg')">
+    <!-- Add more images as needed -->
+  </main>
+  <footer>
+    <a href="#">Footer Link 1</a>
+    <a href="#">Footer Link 2</a>
+  </footer>
+
+  <script>
+    function expandImage(imageSrc) {
+      // Function to expand image. Add your logic here.
+    }
+  </script>
+</body>
+</html>
