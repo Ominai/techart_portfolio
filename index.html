@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <style>
     body {
       background-color: black;
       color: white;
       text-align: center;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #scene-container {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     header {
       margin-top: 2em;
+      z-index: 1;
+      position: relative;
     }
     nav {
       margin-top: 1em;
+      z-index: 1;
+      position: relative;
     }
     nav a {
       margin: 0 15px;
@@ -26,14 +39,18 @@
       bottom: 0;
       width: 100%;
       text-align: center;
+      z-index: 1;
     }
     .gallery img {
       width: 200px;
       margin: 20px;
+      z-index: 1;
+      position: relative;
     }
   </style>
 </head>
 <body>
+  <div id="scene-container"></div> <!-- Added this line -->
   <header>
     <h1>Your Title</h1>
   </header>
@@ -52,6 +69,7 @@
     <a href="#">Footer Link 2</a>
   </footer>
 
+  <script src="hypercube.js"></script> <!-- Added this line -->
   <script>
     function expandImage(imageSrc) {
       // Function to expand image. Add your logic here.
