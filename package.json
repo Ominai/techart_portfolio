@@ -1,0 +1,14 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "main": "hypercube.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "three.js": "^0.77.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

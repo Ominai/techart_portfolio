@@ -1,79 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    #scene-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    header {
-      margin-top: 2em;
-      z-index: 1;
-      position: relative;
-    }
-    nav {
-      margin-top: 1em;
-      z-index: 1;
-      position: relative;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      z-index: 1;
-    }
-    .gallery img {
-      width: 200px;
-      margin: 20px;
-      z-index: 1;
-      position: relative;
-    }
-  </style>
-</head>
-<body>
-  <div id="scene-container"></div> 
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Landing Page
+  </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+  </script>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="scene-container">
+  </div>
   <header>
-    <h1>Your Title</h1>
+   <h1>
+    Your Title
+   </h1>
   </header>
   <nav>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+   <a href="#">
+    Link 1
+   </a>
+   <a href="#">
+    Link 2
+   </a>
+   <a href="#">
+    Link 3
+   </a>
   </nav>
   <main class="gallery">
-    <img src="image1.jpg" alt="Image 1" onclick="expandImage('image1.jpg')">
-    <img src="image2.jpg" alt="Image 2" onclick="expandImage('image2.jpg')">
-    <!-- Add more images as needed -->
+   <img alt="Image 1" onclick="expandImage('image1.jpg')" src="image1.jpg"/>
+   <img alt="Image 2" onclick="expandImage('image2.jpg')" src="image2.jpg"/>
+   <!-- Add more images as needed -->
   </main>
   <footer>
-    <a href="#">Footer Link 1</a>
-    <a href="#">Footer Link 2</a>
+   <a href="#">
+    Footer Link 1
+   </a>
+   <a href="#">
+    Footer Link 2
+   </a>
   </footer>
-
-  <script src="hypercube.js"></script> 
+  <script src="hypercube.js">
+  </script>
   <script>
-    function expandImage(imageSrc) {
+   function expandImage(imageSrc) {
       // Function to expand image. Add your logic here.
     }
   </script>
-</body>
+ </body>
 </html>

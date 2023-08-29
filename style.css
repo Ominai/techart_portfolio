@@ -1,0 +1,43 @@
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #scene-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header {
+    margin-top: 2em;
+    z-index: 1;
+    position: relative;
+  }
+  nav {
+    margin-top: 1em;
+    z-index: 1;
+    position: relative;
+  }
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  .gallery img {
+    width: 200px;
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+  }
