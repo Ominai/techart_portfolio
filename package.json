@@ -1,16 +1,17 @@
 {
+  "name": "myportfolio",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "name": "landing-page",
-  "version": "1.0.0",
-  "main": "hypercube.js",
   "scripts": {
-    "start": "vite"
-  },
-  "dependencies": {
-    "three": "^0.155.0",
-    "three.js": "^0.77.1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.9"
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "three": "^0.155.0"
   }
 }
