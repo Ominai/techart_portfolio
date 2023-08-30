@@ -5,12 +5,19 @@
   <title>
    Landing Page
   </title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
-  </script>
   <link href="style.css" rel="stylesheet"/>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.77.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.77.1/examples/jsm/"
+      }
+    }
+  </script>
  </head>
  <body>
-  <div id="scene-container">
+  <div id="hypercube">
   </div>
   <header>
    <h1>
@@ -41,12 +48,12 @@
     Footer Link 2
    </a>
   </footer>
-  <script src="hypercube.js">
-  </script>
   <script>
    function expandImage(imageSrc) {
       // Function to expand image. Add your logic here.
     }
+  </script>
+  <script type="module" src="hypercube.js">
   </script>
  </body>
 </html>

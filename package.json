@@ -1,14 +1,16 @@
 {
+  "type": "module",
   "name": "landing-page",
   "version": "1.0.0",
   "main": "hypercube.js",
   "scripts": {
-    "start": "live-server"
+    "start": "vite"
   },
   "dependencies": {
+    "three": "^0.155.0",
     "three.js": "^0.77.1"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "vite": "^4.4.9"
   }
 }
