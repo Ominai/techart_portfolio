@@ -17,9 +17,9 @@ camera.position.setZ(30);
 camera.position.setX(-3);
 renderer.render(scene, camera);
 
-// gltf
+// glb
 const gltfLoader = new GLTFLoader();
-const url = 'scene.gltf';
+const url = 's_test.glb';
 gltfLoader.load(url, (gltf) => {
   const root = gltf.scene;
   scene.add(root);
