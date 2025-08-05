@@ -1,8 +1,8 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Le-Anh',
-    lastName:  'Nguyen',
+    firstName: 'Arch',
+    lastName:  'Raxion',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -29,7 +29,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/leonmnguyen/',
+        link: '',
     },
     {
         name: 'X',
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Tech Artist</>,
-    subline: <>I'm Le-Anh (Leon), an Artist with experience in <br /> <InlineCode>Graphic Design</InlineCode><InlineCode>App Development</InlineCode><InlineCode>Web Design</InlineCode><InlineCode>3D Modeling</InlineCode><br /><InlineCode>2D Illustration</InlineCode><InlineCode>Marketing</InlineCode><InlineCode>Movie + Game Animation</InlineCode><br /><br />
+    subline: <>An Artist with experience in <br /> <InlineCode>Graphic Design</InlineCode><InlineCode>App Development</InlineCode><InlineCode>Web Design</InlineCode><InlineCode>3D Modeling</InlineCode><br /><InlineCode>2D Illustration</InlineCode><InlineCode>Marketing</InlineCode><InlineCode>Movie + Game Animation</InlineCode><br /><br />
     I've recently been tinkering with <br />
     <InlineCode>Code/Scripting</InlineCode><InlineCode>ML Engineering</InlineCode><InlineCode>Network Security</InlineCode>
     </>
@@ -72,7 +72,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Le-Anh is an art-centric tinkerer with a vast repetoire of skills for taking on challenging digital problems. He is particularly skilled in rapid prototyping of functional deliverables and marketing assets. His work has stood the test of time in multiple industries from Medical to Retail. With a penchant for computer optimization, tinkering, and custom app development on Linux systems, he's tech savvy enough to be his own IT team just as a matter of hobby.</>
+        description: <>Raxion is an art-centric tinkerer with a vast repetoire of skills for taking on challenging digital problems. He is particularly skilled in rapid prototyping of functional deliverables and marketing assets. His work has stood the test of time in multiple industries from Medical to Retail. With a penchant for computer optimization, tinkering, and custom app development on Linux systems, he's tech savvy enough to be his own IT team just as a matter of hobby.</>
     },
     work: {
         display: true, // set to false to hide this section
