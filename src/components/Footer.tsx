@@ -17,7 +17,7 @@ export const Footer = () => {
             justifyContent="center" mobileDirection="column">
             <Flex
                 className={styles.mobile}
-                fillWidth maxWidth="m" paddingY="8" paddingX="16" gap="16"
+                fillWidth maxWidth="m" padding"8" paddingX="16" gap="16"
                 justifyContent="space-between" alignItems="center">
                 <Text
                     variant="body-default-s"
@@ -28,11 +28,7 @@ export const Footer = () => {
                     </Text>
                     <Text paddingX="4">
                         {person.name}
-                    </Text>
-                    <Text onBackground="neutral-weak">
-                        {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                        / Build with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com/templates/magic-portfolio">Once UI</SmartLink>
-                    </Text>
+                    </Text
                 </Text>
                 <Flex
                     gap="16">
