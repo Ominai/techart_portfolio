@@ -17,7 +17,7 @@ export const Footer = () => {
             justifyContent="center" mobileDirection="column">
             <Flex
                 className={styles.mobile}
-                fillWidth maxWidth="m" padding"8" paddingX="16" gap="16"
+                fillWidth maxWidth="m" paddingY="8" paddingX="16" gap="16"
                 justifyContent="space-between" alignItems="center">
                 <Text
                     variant="body-default-s"
@@ -28,7 +28,7 @@ export const Footer = () => {
                     </Text>
                     <Text paddingX="4">
                         {person.name}
-                    </Text
+                    </Text>
                 </Text>
                 <Flex
                     gap="16">
