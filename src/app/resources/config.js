@@ -1,4 +1,4 @@
-const baseURL = 'raxion.art'
+const baseURL = 'leon-nguyen.art'
 
 // Enable localization
 const i18n = false;

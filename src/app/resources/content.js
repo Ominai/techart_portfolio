@@ -1,8 +1,8 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Arch',
-    lastName:  'Raxion',
+    firstName: 'Leon',
+    lastName:  'Nguyen',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -24,7 +24,7 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/Ominai',
+        link: '',
     },
     {
         name: 'LinkedIn',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:rax@raxion.art',
+        link: 'mailto:leonm.nguyen@proton.me',
     },
 ]
 
@@ -72,7 +72,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Raxion is an art-centric tinkerer with a vast repetoire of skills for taking on challenging digital problems. He is particularly skilled in rapid prototyping of functional deliverables and marketing assets. His work has stood the test of time in multiple industries from Medical to Retail. With a penchant for computer optimization, tinkering, and custom app development on Linux systems, he's tech savvy enough to be his own IT team just as a matter of hobby.</>
+        description: <>Leon is an art-centric tinkerer with a vast repetoire of skills for taking on challenging digital problems. He is particularly skilled in rapid prototyping of functional deliverables and marketing assets. His work has stood the test of time in multiple industries from Medical to Retail. With a penchant for computer optimization, tinkering, and custom app development on Linux systems, he's tech savvy enough to be his own IT team just as a matter of hobby.</>
     },
     work: {
         display: true, // set to false to hide this section
