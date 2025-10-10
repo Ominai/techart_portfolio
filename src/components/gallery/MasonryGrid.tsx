@@ -32,6 +32,7 @@ export default function MasonryGrid() {
                        <SmartImage
                             key={index}
                             radius="m"
+                            sizes={image.width.toString()}
                             src={image.src}
                             alt={image.alt}
                             className={styles.gridItem}
