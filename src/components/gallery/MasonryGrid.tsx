@@ -28,14 +28,13 @@ export default function MasonryGrid() {
                     border="neutral-medium"
                     borderStyle="solid-1"
                     radius="m"
+                    className={styles.gridItem}
                     minWidth={image.width} height={image.height}>
                        <SmartImage
-                            key={index}
                             radius="m"
                             sizes={image.width.toString()}
                             src={image.src}
                             alt={image.alt}
-                            className={styles.gridItem}
                             enlarge/>
                 </Flex>
             ))}
