@@ -23,15 +23,20 @@ export default function MasonryGrid() {
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
             {gallery.images.map((image, index) => (
-                <SmartImage
+                <Flex
                     key={index}
+                    border="neutral-medium"
+                    borderStyle="solid-1"
                     radius="m"
-                    aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "9 / 16"}
-                    src={image.src}
-                    alt={image.alt}
-                    className={styles.gridItem}
-                    enlarge={true}
-                />
+                    minWidth={image.width} height={image.height}>
+                       <SmartImage
+                            key={index}
+                            radius="m"
+                            src={image.src}
+                            alt={image.alt}
+                            className={styles.gridItem}
+                            enlarge/>
+                </Flex>
             ))}
         </Masonry>
     );
