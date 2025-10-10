@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import { renderContent } from '@/app/resources';
 
 export default function MasonryGrid() {
+    console.log('MasonryGrid component loaded - NEW VERSION');
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
