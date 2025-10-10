@@ -22,8 +22,11 @@ export default function MasonryGrid() {
     const { gallery } = renderContent(t);
 
     const openLightbox = (index) => {
+        console.log('Opening lightbox for index:', index);
+        console.log('Image:', gallery.images[index]);
         setCurrentIndex(index);
         setSelectedImage(gallery.images[index]);
+        console.log('Selected image state should be:', gallery.images[index]);
     };
 
     const closeLightbox = () => {
@@ -94,6 +97,17 @@ export default function MasonryGrid() {
                     justifyContent="center"
                     alignItems="center"
                     onClick={closeLightbox}>
+                    
+                    <div style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        color: 'white',
+                        fontSize: '2rem'
+                    }}>
+                        LIGHTBOX IS OPEN - Image: {currentIndex + 1}
+                    </div>
                     
                     {/* Close button */}
                     <div style={{
