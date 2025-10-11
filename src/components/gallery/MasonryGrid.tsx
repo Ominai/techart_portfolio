@@ -29,6 +29,7 @@ export default function MasonryGrid() {
                     borderStyle="solid-1"
                     radius="m"
                     className={styles.gridItem}
+                    aspectRatio={image.orientation === 'portrait' ? '2/3' : '3/2'}
                     onClick={() => console.log('Flex clicked', index)}>
                        <SmartImage
                            radius="m"
