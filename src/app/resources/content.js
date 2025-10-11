@@ -400,6 +400,55 @@ const gallery = {
             width: 6,
             height: 5
         },
+        { 
+            src: '/images/gallery/img-12.png', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 9,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-13.png', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 5,
+            height: 8
+        },
+        { 
+            src: '/images/gallery/img-14.png', 
+            alt: 'image',
+            orientation: 'horizontal',
+            width: 8,
+            height: 8
+        },
+        { 
+            src: '/images/gallery/img-15.png', 
+            alt: 'image',
+            orientation: 'horizontal',
+            width: 7,
+            height: 8
+        },
+        { 
+            src: '/images/gallery/img-16.png', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 9,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-17.png', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 9,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-18.png', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 9,
+            height: 10
+        },
     ]
 }
 
