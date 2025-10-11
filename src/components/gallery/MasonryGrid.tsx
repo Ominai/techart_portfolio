@@ -7,18 +7,6 @@ import { useTranslations } from 'next-intl';
 import { renderContent } from '@/app/resources';
 
 export default function MasonryGrid() {
-    const t = useTranslations();
-    const { gallery } = renderContent(t);
-
-    return (
-        <div>
-            <h1 style={{color: 'red', fontSize: '50px'}}>TESTING - CAN YOU SEE THIS?</h1>
-            <Masonry
-                breakpointCols={breakpointColumnsObj}
-                className={styles.masonryGrid}
-                columnClassName={styles.masonryGridColumn}>
-
-export default function MasonryGrid() {
     const breakpointColumnsObj = {
         default: 4,
         1440: 3,
