@@ -12,7 +12,6 @@ interface GalleryImage {
     orientation: string;
     width: number;
     height: number;
-    type?: 'image' | 'video';
 }
 
 export default function MasonryGrid() {
@@ -31,50 +30,24 @@ export default function MasonryGrid() {
             breakpointCols={breakpointColumnsObj}
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
-            {(gallery.images as GalleryImage[]).map((image, index) => {
-                const isVideo = image.type === 'video' || 
-                               (typeof image.src === 'string' && (
-                                   image.src.endsWith('.webm') || 
-                                   image.src.endsWith('.mp4')
-                               ));
-                
-                return (
-                    <Flex
-                        key={index}
-                        border="neutral-medium"
-                        borderStyle="solid-1"
-                        radius="m"
-                        className={styles.gridItem}
-                        fillWidth
-                        onClick={() => console.log('Flex clicked', index)}>
-                        {isVideo ? (
-                            <video
-                                controls
-                                autoPlay
-                                loop
-                                muted
-                                style={{ 
-                                    width: '100%', 
-                                    height: 'auto', 
-                                    borderRadius: 'var(--radius-m)',
-                                    display: 'block'
-                                }}
-                                onClick={() => console.log('Video clicked!')}>
-                                <source src={image.src} type="video/webm" />
-                                Your browser does not support the video tag.
-                            </video>
-                        ) : (
-                            <SmartImage
-                                radius="m"
-                                src={image.src}
-                                alt={image.alt}
-                                aspectRatio={`${image.width}/${image.height}`}
-                                onClick={() => console.log('Image clicked!')}
-                                enlarge/>
-                        )}
-                    </Flex>
-                );
-            })}
+            {(gallery.images as GalleryImage[]).map((image, index) => (
+                <Flex
+                    key={index}
+                    border="neutral-medium"
+                    borderStyle="solid-1"
+                    radius="m"
+                    className={styles.gridItem}
+                    fillWidth
+                    onClick={() => console.log('Flex clicked', index)}>
+                       <SmartImage
+                           radius="m"
+                           src={image.src}
+                           alt={image.alt}
+                           aspectRatio={`${image.width}/${image.height}`}
+                           onClick={() => console.log('Image clicked!')}
+                           enlarge/>
+                </Flex>
+            ))}
         </Masonry>
     );
 }
