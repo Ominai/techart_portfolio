@@ -29,11 +29,13 @@ export default function MasonryGrid() {
                     borderStyle="solid-1"
                     radius="m"
                     className={styles.gridItem}
+                    fillWidth
                     onClick={() => console.log('Flex clicked', index)}>
                        <SmartImage
                            radius="m"
                            src={image.src}
                            alt={image.alt}
+                           aspectRatio={`${image.width}/${image.height}`}
                            onClick={() => console.log('Image clicked!')}
                            enlarge/>
                 </Flex>
