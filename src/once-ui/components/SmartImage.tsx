@@ -71,7 +71,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                 ? `translate(${translateX}px, ${translateY}px) scale(${scale})`
                 : 'translate(0, 0) scale(1)',
             transition: 'all 0.3s ease-in-out',
-            zIndex: isEnlarged ? 1001 : 1,
+            zIndex: isEnlarged ? 2 : 1,
         };
     };
 
@@ -161,7 +161,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                     justifyContent="center"
                     alignItems="center"
                     position="fixed"
-                    zIndex={1002}
+                    zIndex={1}
                     onClick={handleClick}
                     style={{
                         top: 0,
@@ -175,7 +175,6 @@ const SmartImage: React.FC<SmartImageProps> = ({
                     }}>
                     <Flex
                         position="relative"
-                        zIndex={1003}
                         style={{
                             height: '100vh',
                             transform: 'translate(-50%, -50%)',
