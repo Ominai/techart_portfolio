@@ -140,7 +140,7 @@ export default function Project({ params }: WorkParams) {
 					enlarge
 					radius="m"
 					alt="image"
-					src={post.metadata.images[0]}
+					src={post.metadata.images[0]}/>
 			)}
 			<Flex style={{margin: 'auto'}}
 				as="article"
