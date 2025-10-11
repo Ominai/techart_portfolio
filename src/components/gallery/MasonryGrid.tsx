@@ -32,9 +32,9 @@ export default function MasonryGrid() {
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
             {(gallery.images as GalleryImage[]).map((image, index) => {
+                const imageSrc = typeof image.src === 'string' ? image.src : '';
                 const isVideo = image.type === 'video' || 
-                               image.src.endsWith('.webm') || 
-                               image.src.endsWith('.mp4');
+                               (typeof imageSrc === 'string' && (imageSrc.endsWith('.webm') || imageSrc.endsWith('.mp4')));
                 
                 return (
                     <Flex
@@ -58,13 +58,13 @@ export default function MasonryGrid() {
                                     display: 'block'
                                 }}
                                 onClick={() => console.log('Video clicked!')}>
-                                <source src={image.src} type="video/webm" />
+                                <source src={imageSrc} type="video/webm" />
                                 Your browser does not support the video tag.
                             </video>
                         ) : (
                             <SmartImage
                                 radius="m"
-                                src={image.src}
+                                src={imageSrc}
                                 alt={image.alt}
                                 aspectRatio={`${image.width}/${image.height}`}
                                 onClick={() => console.log('Image clicked!')}
