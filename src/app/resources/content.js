@@ -66,7 +66,7 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
@@ -327,56 +327,77 @@ const gallery = {
             src: '/images/gallery/img-01.gif', 
             alt: 'image',
             orientation: 'vertical'
+            width: 3,
+            height: 5
         },
         { 
             src: '/images/gallery/img-02.png', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 10,
+            height: 10
         },
         { 
             src: '/images/gallery/img-03.jpg', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 9,
+            height: 6
         },
         { 
             src: '/images/gallery/img-04.jpg', 
             alt: 'image',
             orientation: 'horizontal'
-        },
+            width: 9,
+            height: 6        },
         { 
             src: '/images/gallery/img-05.png', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 16,
+            height: 9
         },
         { 
             src: '/images/gallery/img-06.jpg', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 16,
+            height: 9
         },
         { 
             src: '/images/gallery/img-07.png', 
             alt: 'image',
             orientation: 'vertical'
+            width: 10,
+            height: 10
         },
         { 
             src: '/images/gallery/img-08.jpg', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 16,
+            height: 9
         },
         { 
             src: '/images/gallery/img-09.jpg', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 4,
+            height: 3
         },
         { 
             src: '/images/gallery/img-10.jpg', 
             alt: 'image',
             orientation: 'vertical'
+            width: 6,
+            height: 5
         },
         { 
             src: '/images/gallery/img-11.jpg', 
             alt: 'image',
             orientation: 'horizontal'
+            width: 6,
+            height: 5
         },
     ]
 }
