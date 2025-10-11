@@ -161,7 +161,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                     justifyContent="center"
                     alignItems="center"
                     position="fixed"
-                    zIndex={1001}
+                    zIndex={1002}
                     onClick={handleClick}
                     style={{
                         top: 0,
@@ -175,6 +175,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
                     }}>
                     <Flex
                         position="relative"
+                        zIndex={1003}
                         style={{
                             height: '100vh',
                             transform: 'translate(-50%, -50%)',
