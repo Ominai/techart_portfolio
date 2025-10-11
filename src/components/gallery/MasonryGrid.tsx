@@ -6,6 +6,14 @@ import styles from "./Gallery.module.scss";
 import { useTranslations } from 'next-intl';
 import { renderContent } from '@/app/resources';
 
+interface GalleryImage {
+    src: string;
+    alt: string;
+    orientation: string;
+    width: number;
+    height: number;
+}
+
 export default function MasonryGrid() {
     const breakpointColumnsObj = {
         default: 4,
@@ -22,7 +30,7 @@ export default function MasonryGrid() {
             breakpointCols={breakpointColumnsObj}
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
-            {gallery.images.map((image, index) => (
+            {(gallery.images as GalleryImage[]).map((image, index) => (
                 <Flex
                     key={index}
                     border="neutral-medium"
