@@ -137,10 +137,11 @@ export default function Project({ params }: WorkParams) {
 			</Flex>
 			{post.metadata.images.length > 0 && (
 				<SmartImage
+					enlarge
 					radius="m"
 					alt="image"
 					src={post.metadata.images[0]}
-					style={{ maxWidth: '100%', height: 'auto' }}/>
+					style={post.metadata.images[0]}/>
 			)}
 			<Flex style={{margin: 'auto'}}
 				as="article"
