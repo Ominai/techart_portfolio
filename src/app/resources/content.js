@@ -321,15 +321,8 @@ const blog = {
 const gallery = {
     label: 'Gallery',
     title: 'My varied and personal artwork',
-    description: `A photo collection by ${person.name}`,
+    description: `Various artwork by ${person.name}`,
     images: [
-        { 
-            src: '/images/gallery/img-01.gif', 
-            alt: 'image',
-            orientation: 'vertical',
-            width: 3,
-            height: 5
-        },
         { 
             src: '/images/gallery/img-02.png', 
             alt: 'image',
@@ -447,6 +440,76 @@ const gallery = {
             alt: 'image',
             orientation: 'vertical',
             width: 9,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-19.gif', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-20.gif', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-21.gif', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-22.jpg', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-23.jpg', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
+            height: 10
+        },
+        { 
+            src: '/images/gallery/img-24.jpg', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 4,
+            height: 5
+        },
+        { 
+            src: '/images/gallery/img-25.jpg', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 4,
+            height: 5
+        },
+        { 
+            src: '/images/gallery/img-26.gif', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 7,
+            height: 9
+        },
+        { 
+            src: '/images/gallery/img-27.gif', 
+            alt: 'image',
+            orientation: 'horizontal',
+            width: 16,
+            height: 9
+        },
+        { 
+            src: '/images/gallery/img-28.jpg', 
+            alt: 'image',
+            orientation: 'vertical',
+            width: 10,
             height: 10
         },
     ]
