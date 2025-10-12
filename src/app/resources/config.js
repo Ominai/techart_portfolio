@@ -52,7 +52,7 @@ const style = {
 }
 
 const display = {
-    location: true,
+    location: false,
     time:     true
 }
 
