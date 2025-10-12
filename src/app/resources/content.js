@@ -88,18 +88,7 @@ const about = {
                     <>Collaborated on the AutoGPT project during ChatGPT-3.5 release to develop and test pioneering memory recursion methods for improved LLM coherence and reduced hallucinations; key findings that clarified foundational limitations of AI model determinism versus probabilistic behavior.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/.jpg',
-                        alt: 'Snyxius Project',
-                        width: 5,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/.jpg',
-                        alt: 'Snyxius Project',
-                        width: 14,
-                        height: 9
-                    }
+                    {}
                 ]
             },
 
